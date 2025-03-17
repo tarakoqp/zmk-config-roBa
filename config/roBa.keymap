@@ -45,6 +45,26 @@
             bindings = <&kp LEFT_ALT>;
             key-positions = <35 36>;
         };
+
+        left {
+            bindings = <&kp LEFT_ARROW>;
+            key-positions = <18 17>;
+        };
+
+        up {
+            bindings = <&kp UP_ARROW>;
+            key-positions = <6 7>;
+        };
+
+        right {
+            bindings = <&kp RIGHT_ARROW>;
+            key-positions = <20 19>;
+        };
+
+        down {
+            bindings = <&kp DOWN_ARROW>;
+            key-positions = <30 31>;
+        };
     };
 
     macros {
@@ -83,10 +103,10 @@
 
         FUNCTION {
             bindings = <
-&trans  &trans  &trans  &trans  &trans                       &kp F1  &kp F2  &kp F3  &kp F4  &kp F5
-&trans  &trans  &trans  &trans  &trans  &trans      &kp F13  &kp F6  &kp F7  &kp F8  &kp F9  &kp F10
-&trans  &trans  &trans  &trans  &trans  &trans      &trans   &trans  &trans  &trans  &trans  &kp F11
-&trans  &trans  &trans  &trans  &trans  &trans      &trans   &trans                          &kp F12
+&kp ESCAPE  &kp LC(LS(TAB))     &kp UP_ARROW        &kp LC(TAB)          &trans                        &kp F1  &kp F2  &kp F3  &kp F4  &kp F5
+&kp HOME    &kp LEFT_ARROW      &kp DOWN_ARROW      &kp RIGHT_ARROW      &kp END  &trans      &kp F13  &kp F6  &kp F7  &kp F8  &kp F9  &kp F10
+&trans      &kp LG(LEFT_ARROW)  &kp LG(UP_ARROW)    &kp LG(RIGHT_ARROW)  &trans   &trans      &trans   &trans  &trans  &trans  &trans  &kp F11
+&trans      &trans              &kp LG(DOWN_ARROW)  &trans               &trans   &trans      &trans   &trans                          &kp F12
             >;
         };
 
