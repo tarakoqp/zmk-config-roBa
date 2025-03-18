@@ -169,6 +169,8 @@
 &kp NUMBER_0  &trans        &kp LEFT_BRACKET  &kp LEFT_BRACE  &kp LEFT_PARENTHESIS  &kp F11      &kp F12  &kp RIGHT_PARENTHESIS  &kp RIGHT_BRACE  &kp RIGHT_BRACKET  &trans        &trans
 &trans        &trans        &trans            &trans          &trans                &trans       &trans   &trans                                                                   &trans
             >;
+
+            label = "number";
         };
     };
 };
