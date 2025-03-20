@@ -70,6 +70,16 @@
             bindings = <&kp LA(P)>;
             key-positions = <9 8>;
         };
+
+        opening {
+            bindings = <&pc_opening>;
+            key-positions = <5 6>;
+        };
+
+        remote_combo {
+            bindings = <&remote>;
+            key-positions = <16 17>;
+        };
     };
 
     macros {
@@ -78,6 +88,20 @@
             #binding-cells = <1>;
             bindings = <&to 0 &macro_param_1to1 &kp MACRO_PLACEHOLDER>;
             label = "TO_LAYER_0";
+        };
+
+        remote: pass_remote {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LS(T) &kp E &kp R &kp A &kp L &kp A &kp B &kp N9 &kp N2>;
+            label = "PASS_REMOTE";
+        };
+
+        pc_opening: pc {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp K &kp A &kp Z &kp U &kp K &kp I &kp N1 &kp N1 &kp N0 &kp N8>;
+            label = "PC";
         };
     };
 
@@ -137,10 +161,10 @@
 
         MOUSE {
             bindings = <
-&trans  &trans  &trans  &trans  &trans                          &trans  &trans    &trans  &trans    &trans
-&trans  &trans  &trans  &trans  &trans  &trans        &trans    &trans  &mkp MB1  &trans  &mkp MB2  &mkp MB3
-&trans  &trans  &trans  &trans  &trans  &mkp MB4      &mkp MB5  &trans  &trans    &trans  &trans    &trans
-&trans  &trans  &trans  &trans  &trans  &mkp MB4      &trans    &trans                              &trans
+&trans  &trans  &trans  &trans    &trans                            &trans  &trans    &trans  &trans    &trans
+&trans  &trans  &trans  &trans    &trans    &trans        &trans    &trans  &mkp MB1  &trans  &mkp MB2  &mkp MB3
+&trans  &trans  &trans  &trans    &trans    &mkp MB4      &mkp MB5  &trans  &trans    &trans  &trans    &trans
+&trans  &trans  &trans  &mkp MB1  &mkp MB2  &mkp MB4      &trans    &trans                              &trans
             >;
         };
 
