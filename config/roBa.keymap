@@ -73,12 +73,12 @@
 
         opening {
             bindings = <&pc_opening>;
-            key-positions = <5 6>;
+            key-positions = <16 5>;
         };
 
         remote_combo {
             bindings = <&remote>;
-            key-positions = <16 17>;
+            key-positions = <18 16>;
         };
     };
 
