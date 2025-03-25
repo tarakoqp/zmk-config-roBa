@@ -114,6 +114,14 @@
             #binding-cells = <2>;
             tapping-term-ms = <200>;
         };
+
+        original_repeat: original_repeat {
+            compatible = "zmk,behavior-hold-tap";
+            label = "ORIGINAL_REPEAT";
+            #binding-cells = <2>;
+            tapping-term-ms = <500>;
+            bindings = <&kp>;
+        };
     };
 
     keymap {
@@ -121,10 +129,10 @@
 
         default_layer {
             bindings = <
-&kp Q             &kp W         &kp E         &kp R           &kp T                                                 &kp Y        &kp U  &lt 5 I    &kp O    &kp P
-&kp A             &kp S         &kp D         &kp F           &kp G        &kp LA(TAB)               &kp MINUS      &kp H        &kp J  &lt 5 K    &kp L    &kp SEMI
-&mt LEFT_SHIFT Z  &kp X         &kp C         &kp V           &kp B        &kp LEFT_BRACKET          &kp EQUAL      &kp N        &kp M  &kp COMMA  &kp DOT  &kp SLASH
-&kp LCTRL         &kp LEFT_WIN  &kp LEFT_ALT  &lt 6 CAPSLOCK  &lt 7 SPACE  &lt_to_layer_0 3 TAB      &kp BACKSPACE  &lt 1 ENTER                             &kp DEL
+&kp Q             &kp W         &kp E         &kp R           &kp T                                                     &kp Y        &kp U  &lt 5 I    &kp O    &kp P
+&kp A             &kp S         &kp D         &kp F           &kp G        &original_repeat LA(TAB)      &kp MINUS      &kp H        &kp J  &lt 5 K    &kp L    &kp SEMI
+&mt LEFT_SHIFT Z  &kp X         &kp C         &kp V           &kp B        &kp LEFT_BRACKET              &kp EQUAL      &kp N        &kp M  &kp COMMA  &kp DOT  &kp SLASH
+&kp LCTRL         &kp LEFT_WIN  &kp LEFT_ALT  &lt 6 CAPSLOCK  &lt 7 SPACE  &lt_to_layer_0 3 TAB          &kp BACKSPACE  &lt 1 ENTER                             &kp DEL
             >;
 
             sensor-bindings = <&inc_dec_kp PAGE_DOWN PAGE_UP>;
