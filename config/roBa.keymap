@@ -6,7 +6,6 @@
 #define MOUSE 4
 #define SCROLL 5
 #define NUM 6
-
 #define ZMK_POINTING_DEFAULT_SCRL_VAL 100
 
 &mt {
@@ -129,7 +128,7 @@
 &kp LCTRL         &kp LEFT_WIN  &kp LEFT_ALT  &lt 6 CAPSLOCK  &lt 7 SPACE  &lt_to_layer_0 3 TAB      &kp BACKSPACE  &lt 1 ENTER                             &kp DEL
             >;
 
-            sensor-bindings = <&inc_dec_kp K_SCROLL_DOWN K_SCROLL_UP>;
+            sensor-bindings = <&inc_dec_kp PAGE_DOWN PAGE_UP>;
         };
 
         FUNCTION {
