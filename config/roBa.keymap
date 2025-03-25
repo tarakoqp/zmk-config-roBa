@@ -115,6 +115,15 @@
             #binding-cells = <2>;
             tapping-term-ms = <200>;
         };
+
+        scroll_original: scroll_original {
+            compatible = "zmk,behavior-sensor-rotate-var";
+            label = "SCROLL_ORIGINAL";
+            #sensor-binding-cells = <2>;
+            bindings = <&msc>, <&msc>;
+
+            tap-ms = <20>;
+        };
     };
 
     keymap {
@@ -128,7 +137,7 @@
 &kp LCTRL         &kp LEFT_WIN  &kp LEFT_ALT  &lt 6 CAPSLOCK  &lt 7 SPACE  &lt_to_layer_0 3 TAB      &kp BACKSPACE  &lt 1 ENTER                             &kp DEL
             >;
 
-            sensor-bindings = <&inc_dec_kp PAGE_DOWN PAGE_UP>;
+            sensor-bindings = <&scroll_original SCRL_DOWN SCRL_UP>;
         };
 
         FUNCTION {
