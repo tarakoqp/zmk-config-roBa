@@ -114,14 +114,6 @@
             #binding-cells = <2>;
             tapping-term-ms = <200>;
         };
-
-        original_repeat: original_repeat {
-            compatible = "zmk,behavior-hold-tap";
-            label = "ORIGINAL_REPEAT";
-            #binding-cells = <2>;
-            tapping-term-ms = <500>;
-            bindings = <&kp>;
-        };
     };
 
     keymap {
