@@ -65,7 +65,7 @@
         scroll-layers = <5>;
 
         arrows {
-            layers = <3>;
+            layers = <6>;
             bindings =
                 <&kp RIGHT_ARROW>,
                 <&kp LEFT_ARROW>,
@@ -77,17 +77,6 @@
             tap-ms = <5>;
         };
     
-        volume {
-            layers = <6>;
-            bindings =
-                    <&none>,
-                    <&none>,
-                    <&kp C_VOLUME_UP>,
-                    <&kp C_VOLUME_DOWN>;
-    
-            wait-ms = <5>;
-            tap-ms = <5>;
-        };
 
 
     };
