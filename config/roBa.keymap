@@ -6,7 +6,6 @@
 #define MOUSE 4
 #define SCROLL 5
 #define NUM 6
-
 #define ZMK_POINTING_DEFAULT_SCRL_VAL 100
 
 &mt {
@@ -174,10 +173,10 @@
 
         MOUSE {
             bindings = <
-&trans  &trans  &trans  &trans    &trans                          &trans  &trans    &trans  &trans    &trans
-&trans  &trans  &trans  &trans    &trans  &trans        &trans    &trans  &mkp MB1  &trans  &mkp MB2  &mkp MB3
-&trans  &trans  &trans  &trans    &trans  &mkp MB4      &mkp MB5  &trans  &trans    &trans  &trans    &trans
-&trans  &trans  &trans  &mkp MB1  &trans  &mkp MB4      &trans    &trans                              &trans
+&trans  &trans  &trans  &trans  &trans                          &trans    &trans    &trans  &trans    &trans
+&trans  &trans  &trans  &trans  &trans  &trans        &trans    &mkp MB3  &mkp MB1  &trans  &mkp MB2  &mkp MB3
+&trans  &trans  &trans  &trans  &trans  &mkp MB4      &mkp MB5  &trans    &trans    &trans  &trans    &trans
+&trans  &trans  &trans  &trans  &trans  &trans        &trans    &trans                                &trans
             >;
         };
 
