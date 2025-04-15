@@ -81,6 +81,11 @@
             bindings = <&remote>;
             key-positions = <18 16>;
         };
+
+        tadmin {
+            bindings = <&tadmin>;
+            key-positions = <28 30>;
+        };
     };
 
     macros {
@@ -103,6 +108,13 @@
             #binding-cells = <0>;
             bindings = <&kp K &kp A &kp Z &kp U &kp K &kp I &kp N1 &kp N1 &kp N0 &kp N8>;
             label = "PC";
+        };
+
+        tadmin: tadmin {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp T &kp E &kp R &kp A &kp L &kp A &kp B &kp A &kp D &kp M &kp I &kp N>;
+            label = "TADMIN";
         };
     };
 
