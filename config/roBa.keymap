@@ -106,7 +106,7 @@
         pc_opening: pc {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp K &kp A &kp Z &kp U &kp K &kp I &kp N1 &kp N1 &kp N0 &kp N8>;
+            bindings = <&kp LS(Q) &kp LS(P) &kp Q &kp P &kp N9 &kp N2>;
             label = "PC";
         };
 
