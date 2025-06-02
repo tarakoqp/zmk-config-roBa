@@ -86,6 +86,11 @@
             bindings = <&tadmin>;
             key-positions = <28 30>;
         };
+
+        layer-8 {
+            bindings = <&lt 8 DELETE>;
+            key-positions = <37 41>;
+        };
     };
 
     macros {
@@ -203,10 +208,10 @@
 
         layer_6 {
             bindings = <
-&kp ESC          &kp F2  &kp F3     &kp F4    &kp F5                                 &bt BT_SEL 0  &bt BT_SEL 1     &bt BT_SEL 2       &bt BT_SEL 3  &bt BT_SEL 4
-&kp EXCLAMATION  &kp AT  &kp POUND  &kp DLLR  &kp PRCNT  &trans      &trans          &kp CARET     &kp AMPS         &kp ASTRK          &kp LPAR      &kp RPAR
-&trans           &trans  &trans     &trans    &trans     &trans      &kp APOSTROPHE  &trans        &kp C_VOLUME_UP  &kp C_VOLUME_DOWN  &trans        &bt BT_CLR
-&trans           &trans  &trans     &trans    &trans     &trans      &trans          &trans                                                          &bt BT_CLR_ALL
+&kp ESC          &kp F2  &kp F3     &kp F4    &kp F5                                  &bt BT_SEL 0  &bt BT_SEL 1     &bt BT_SEL 2       &bt BT_SEL 3  &bt BT_SEL 4
+&kp EXCLAMATION  &kp AT  &kp POUND  &kp DLLR  &kp PRCNT  &trans       &trans          &kp CARET     &kp AMPS         &kp ASTRK          &kp LPAR      &kp RPAR
+&trans           &trans  &trans     &trans    &trans     &kp DQT      &kp APOSTROPHE  &trans        &kp C_VOLUME_UP  &kp C_VOLUME_DOWN  &trans        &trans
+&trans           &trans  &trans     &trans    &trans     &trans       &trans          &trans                                                          &trans
             >;
 
             sensor-bindings = <&inc_dec_kp RIGHT LEFT>;
@@ -222,6 +227,15 @@
 
             label = "number";
             sensor-bindings = <&inc_dec_kp RIGHT LEFT>;
+        };
+
+        layer_8 {
+            bindings = <
+&trans  &trans  &trans  &trans  &trans                      &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans  &trans  &trans  &trans  &bt BT_CLR
+&trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans                          &bt BT_CLR_ALL
+            >;
         };
     };
 };
