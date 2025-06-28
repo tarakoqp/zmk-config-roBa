@@ -1,5 +1,6 @@
 #include "roBa.dtsi"
 #include <dt-bindings/zmk/keys.h>
+#include <input/processors.dtsi>
 
 
 &default_transform {
