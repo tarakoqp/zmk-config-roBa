@@ -1,6 +1,6 @@
 #include "roBa.dtsi"
 #include <dt-bindings/zmk/keys.h>
-#include <input/processors.dtsi>
+
 
 
 &default_transform {
@@ -21,7 +21,6 @@
     trackball_listener {
         compatible = "zmk,input-listener";
         device = <&trackball>;
-        input-processors = <&zip_temp_layer 4 350>;
 
     };
 };
@@ -65,6 +64,7 @@
         irq-gpios = <&gpio0 2 (GPIO_ACTIVE_LOW | GPIO_PULL_UP)>;
         
         scroll-layers = <5>;
+        automouse-layer = <4>;
 
         arrows {
             layers = <6>;
